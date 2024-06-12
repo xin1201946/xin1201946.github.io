@@ -1,0 +1,37 @@
+<!--
+  ~ Copyright (c) 2024.  By Canfeng
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music_player</title>
+</head>
+<body>
+<div style="width:500px;height: 100px;color: orange">
+    <button class="button" id="play_button_music">▶️</button>
+    <audio id="music_player">
+        <source src="./music/It's over (feat_ Maki Flow) - Jød _ Meiden _ Maki Flow.mp3" type="audio/mpeg">
+    </audio>
+</div>
+</body>
+<script>
+    // 获取播放按钮和音频元素
+    const playButtonMusic = document.getElementById('play_button_music');
+    const musicPlayer = document.getElementById('music_player');
+    function play(){
+        if (musicPlayer.paused) {
+            // 如果已暂停，则播放音乐
+            musicPlayer.play();
+            playButtonMusic.innerText='⏸️'
+        } else {
+            // 如果正在播放，则暂停音乐
+            musicPlayer.pause();
+            playButtonMusic.innerText='▶️'
+        }
+    }
+    // 为播放按钮添加点击事件监听器
+    playButtonMusic.addEventListener('click', play);
+</script>
+</html>

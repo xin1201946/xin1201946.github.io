@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title>
+    <style>
+        .md-alert-text{
+            color:orange;
+        }
+    </style>
+</head>
+<body><h1 style="text-align: center" id='帮助文档'>帮助文档</h1>
+<div class="md-alert md-alert-note note"><p><strong class='md-alert-text md-alert-text-note'>提醒</strong><br></p>
+<p>在控制台可输入 文件名(不含.js)+_help即可查看对应帮助,例如: tools_help</p>
+</div>
+<div class="md-alert md-alert-important important"><p><strong class='md-alert-text md-alert-text-important'>重点</strong><br></p>
+<p>这些函数有可能会导致网页出现排版错误,显示异常等情况,只能通过刷新解决!</p>
+</div>
+<div class="md-alert md-alert-caution caution"><p><strong class='md-alert-text md-alert-text-caution'>注意</strong><br></p>
+<p>函数之间存在依赖关系,请不要更改加载顺序!</p>
+</div>
+<figure class='table-figure'><table>
+<thead>
+<tr><th>函数名</th><th>功能</th><th>备注</th></tr></thead>
+<tbody><tr><td>ReflashHotikoto()</td><td>刷新一言</td><td>&nbsp;</td></tr><tr><td>ReflashHotikoto_tools(str)</td><td>根据类型刷新一言,参数可省</td><td>参考<a href='https://developer.hitokoto.cn/sentence/#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0'>Hitokoto_类型</a></td></tr><tr><td>change_background_image_tools()</td><td>更改背景图片为Bing每日一图</td><td>会删除Video元素</td></tr><tr><td>change_video_tools(str)</td><td>更改指定的视频背景,允许接收 Url ,无参数显示帮助</td><td>&nbsp;</td></tr><tr><td>tools_help()</td><td>显示tools.js的帮助</td><td>&nbsp;</td></tr><tr><td>showNotification(title,message,timeout,about_Url)</td><td>显示提示信息,参数可省</td><td>参数(标题,信息,显示时间,要跳转的Url)</td></tr><tr><td>development_help()</td><td>显示developmentConsole.js的帮助</td><td>&nbsp;</td></tr><tr><td>P_Color(str)</td><td>更改段落标签的字体颜色</td><td>存在BUG,右侧栏目无法更改颜色</td></tr><tr><td>change_background_image(str)</td><td>更改背景图片(路径),参数不可省略</td><td>&nbsp;</td></tr><tr><td>change_BiaoTi(str)</td><td>更改大标题内容,参数不可省略</td><td>&nbsp;</td></tr><tr><td>NO_Video()</td><td>删除Video元素,不可恢复!</td><td>&nbsp;</td></tr></tbody>
+</table></figure>
+</body>
+</html>
